@@ -31,7 +31,7 @@ def filter(data):
                     data = ""
                     break
         elif (level == 3):
-            data = data
+            data = f'<textarea readonly="true" placeholder="{data}"></textarea>'
         elif (level == 4):
             for trig in triggers:
                 if(re.search(trig, data, flags=re.IGNORECASE)):
@@ -60,8 +60,6 @@ def view():
 def level1(uuid):
 	if redis.exists(uuid):
 		resp = make_response(render_template('post.html', post=redis.get(uuid).decode()))
-                if level == 3:
-                    resp.headers['Content-Security-Policy'] = 'script-src notepad1.acmcyber.com'
 		return resp
 	abort(404)
 
