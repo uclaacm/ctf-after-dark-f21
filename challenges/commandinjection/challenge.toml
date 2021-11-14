@@ -1,0 +1,9 @@
+slug = ""
+title = "Email Sanitizer"
+author = "Jeffrey"
+value = 20
+description = """Here at the SCP Foundation, we have to DATA EXPUNGED lots of documents. Here is [a tool](http://redacter.acmcyber.com:10000) for helping you do that. This [related document](cmd_whitelist.txt) might help as well."""
+tags = ["web"]
+files = ["cmd_whitelist.txt"]
+flag = "flag{pr0perly_s3cure_input}"
+enabled = true
