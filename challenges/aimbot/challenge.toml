@@ -1,0 +1,9 @@
+slug = "aimbot"
+title = "Aimbot"
+author = "Cyb-Stu"
+value = 100
+description = """The task is simple. Create an aimbot of [this game](http://links.uclaacm.com/cyberXstudio-game) and send us a video of it (so we know you did it)! Starter code can be found [here](https://github.com/psutarjo/Unity-Aimbot-Starter-Code). (A list of other tools you may need can be found on our slides)"""
+tags = ["Game"]
+files = []
+flag = "flag{aimbawt_more_like_am_i_hawt}"
+enabled = true
