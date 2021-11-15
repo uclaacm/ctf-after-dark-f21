@@ -1,0 +1,9 @@
+slug = "splekbot"
+title = "Splekbot"
+author = "Cyb-Stu"
+value = 35
+description = """(NOTE: These challenges were ported from our game hacking workshop) Cheat engine is pretty dank I must say. Please enlighten us with proof that you've somehow manipulated [Splekbot](https://drive.google.com/drive/folders/14e_cIKsCs8KERDl2jQqpCZxgLxuKB0HW) to your advantage! If you're having issues playing the game or coming up with things to hack, feel free to reach out <3 (it's a bit more complicated for Mac). Final note: when you're playing a game, hit 'h' to see the numerical values of the stats."""
+tags = ["Game"]
+files = []
+flag = "flag{sploinky_poinky_aaron_goatie}"
+enabled = true
