@@ -1,0 +1,9 @@
+slug = "robot-detection"
+title = "Robot Detection Algorithm"
+author = "matt"
+value = 15
+description = """I've discovered a novel algorithm to tell if someone is a robot or a human. Try it out [here](https://cyber-web-hacking-challenges.herokuapp.com/robot_detection/)!"""
+tags = ["intro"]
+files = []
+flag = "flag{tw1tt3rb0t_c4n_b0lt_my_nUtz}"
+enabled = false
