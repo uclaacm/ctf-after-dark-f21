@@ -1,0 +1,12 @@
+slug = "void-1"
+title = "Void 1"
+author = "Luke"
+value = 20
+description = """I found this strange [site](http://void1.acmcyber.com:10000) that says it will let
+you scream into the void. For some reason the void tends to echo these screams back and they can
+sometimes be heard in other places. We can hear them [here](http://acmcyber.com:10001) because we
+administer this site. The admin there has some secrets so don't go sneaking around..."""
+tags = ["xss"]
+files = []
+flag = "flag{step_one_and_done}"
+enabled = true
