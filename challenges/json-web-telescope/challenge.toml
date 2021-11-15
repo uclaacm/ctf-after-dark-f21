@@ -1,0 +1,9 @@
+slug = "json-web-telescope"
+title = "James Webb Telescope"
+author = "matt"
+value = 30
+description = """I really love telescopes. Check out this cool one [here](https://cyber-web-hacking-challenges.herokuapp.com/telescope/)."""
+tags = ["intro"]
+files = []
+flag = "flag{js0n_w3b_t3l3sc0p3?}"
+enabled = true
