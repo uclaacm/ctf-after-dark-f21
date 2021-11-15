@@ -1,0 +1,9 @@
+slug = "sanitizer"
+title = "Universal Replacement Link Sanitizer"
+author = "matt"
+value = 15
+description = """I'm trying to access teh flag at [this site](https://cyber-web-hacking-challenges.herokuapp.com/sanitizer/), but it keeps replacing whatever I type."""
+tags = ["intro"]
+files = []
+flag = "flag{uRl_replAc3m3nt_m4st3r}"
+enabled = false
