@@ -6,4 +6,4 @@ description = """I really love telescopes. Check out this cool one [here](https:
 tags = ["intro"]
 files = []
 flag = "flag{js0n_w3b_t3l3sc0p3?}"
-enabled = false
+enabled = true

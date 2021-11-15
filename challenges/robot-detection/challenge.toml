@@ -6,4 +6,4 @@ description = """I've discovered a novel algorithm to tell if someone is a robot
 tags = ["intro"]
 files = []
 flag = "flag{tw1tt3rb0t_c4n_b0lt_my_nUtz}"
-enabled = false
+enabled = true
