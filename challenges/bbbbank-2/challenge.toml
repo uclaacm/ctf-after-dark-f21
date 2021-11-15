@@ -1,0 +1,11 @@
+slug = "bbbbank-2"
+title = "BBBBank 2"
+author = "Jerry"
+value = 15
+description = """It turns out that the [BBBBank]((http://bbbbank.acmcyber.com:10000)) doesn't like hiding their APIs to transfer balances. What is the form data (source) for transferring 23 Bickles from Bavenclaw to Bufflepuff?
+
+Remember to wrap your answer with flag{}!"""
+tags = ["csrf"]
+files = []
+flag = "flag{amt=23&cointype=Bickles&fhouse=Bavenclaw&thouse=Bufflepuff}"
+enabled = true

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>BBBBank</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>
+        BBBBank
+    </h1>
+    <p>
+        Welcome to The Big Brinbotts Bizarding Bank, or the BBBBank! Here, you can transfer Balleons, Bickles, and Bnuts from one account to another! 
+    </p>
+    <img src="b.jpeg" height="100px">
+    <form method="post" action="/barry-botter-and-the-bransfer-of-boney">
+        <label>Amount to Transfer</label><br>
+        <input type="text" placeholder="10" id="amt" name="amt"><br>
+        <label>Coin Type</label><br>
+        <input type="text" id="cointype" name="cointype" list="cointypes">
+        <datalist id="cointypes">
+            <option value="Balleons">
+            <option value="Bickles">
+            <option value="Bnuts">
+        </datalist>
+        <br><br>
+        <label>From House</label><br>
+        <input type="text" placeholder="Blytherin" id="fhouse" name="fhouse"><br><br>
+        <label>To House</label><br>
+        <input type="text" placeholder="Bryffindor" id="thouse" name="thouse"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h3>
+        Current richness:
+    </h3>
+    <p id = "score"></p>
+</body>
