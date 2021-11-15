@@ -1,0 +1,11 @@
+slug = "bbbbank-1"
+title = "BBBBank 1"
+author = "Jerry"
+value = 10
+description = """A new business is open on Bludger Boulevard: the [BBBBank](http://bbbbank.acmcyber.com:10000)! Unfortunately, it seems that the Bizarding Borld of Barry Botter is not good at cybersecurity. What is the endpoint of the request that transfers money, with respect to the index.html?
+
+Hint: the flag should only contain lowercase letters and hyphens. Remember to wrap your answer with flag{}!"""
+tags = ["csrf"]
+files = []
+flag = "flag{barry-botter-and-the-bransfer-of-boney}"
+enabled = true
