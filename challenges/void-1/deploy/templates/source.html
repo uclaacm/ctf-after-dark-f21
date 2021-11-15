@@ -18,18 +18,9 @@ def filter(data):<blockquote>
 
 {% elif level == 2 %}
 
-keywords = <br>
-["fetch", "get", "post", "head", "put", "delete", "connect",<br>
-"options", "trace", "patch", "cookie", "document", "xmlhttprequest",<br>
-"jquery", "ajax", "qwest", "superagent", "http", "client", "axios", <br>
-"request", "xhr"]<br>
-<br>
-
 def filter(data):<blockquote>
-	for word in keywords:<blockquote>
-		if(re.search(word, data, flags=re.IGNORECASE)):<blockquote>
-			data=""<br>
-			break</blockquote></blockquote>
+	while(re.search("script", data, flags = re.IGNORECASE)):<blockquote>
+		data = re.sub("script", "", data, flags = re.IGNORECASE)</blockquote>
 	return data</blockquote>
 
 {% elif level == 3 %}
@@ -45,6 +36,12 @@ def filter(data):<blockquote>
 
 {% elif level == 4 %}
 
+def filter(data):<blockquote>
+	exec(f'data = base64.b64encode(bytes(data, "utf-8"))')<br>
+	return data</blockquote>
+
+{% elif level == 5 %}
+
 triggers = <br>
 ["script", "onabort", "onblur", "onchange", "onclick", "ondblclick",<br>
 "ondragdrop", "onerror", "onfocus", "onkeydown", "onkeypress",<br>
@@ -53,11 +50,20 @@ onmouseover", "onmouseup", "onmove", "onreset", "onresize",<br>
 "onselect", "onsubmit", "onunload", "javascript"]<br>
 <br>
 
+keywords = <br>
+["fetch", "get", "post", "head", "put", "delete", "connect",<br>
+"options", "trace", "patch", "cookie", "document", "xmlhttprequest",<br>
+"jquery", "ajax", "qwest", "superagent", "http", "client", "axios", <br>
+"request", "xhr"]<br>
+<br>
+
 def filter(data):<blockquote>
 	for trig in triggers:<blockquote>
-		if(re.search(trig, data, flags=re.IGNORECASE)):<blockquote>
-			data = ""<br>
-			break</blockquote></blockquote>
+		if(re.search(trig, data, flags = re.IGNORECASE)):<blockquote>
+			data = ""</blockquote></blockquote>
+	for word in keywords:<blockquote>
+		if(re.search(word, data, flags = re.IGNORECASE)):<blockquote>
+			data = ""</blockquote></blockquote>
 	return data</blockquote>
 
 {% else %}
