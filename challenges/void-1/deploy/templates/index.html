@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="/posts" method="POST">
+    <p><textarea name="input" rows="99999" placeholder="Scream anything you want into the void."></textarea></p>
+    <input type="submit" value="Scream">
+</form>
+
+<form action="/view" method="POST">
+    <input type="submit" value="Rule">
+</form>
+{% endblock %}
