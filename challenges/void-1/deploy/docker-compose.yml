@@ -5,30 +5,30 @@ services:
     level1:
         build: .
         ports:
-            - "7001:3000"
+            - "7008:3000"
         environment:
             - XSS_LEVEL=1
     level2:
         build: .
         ports:
-            - "7002:3000"
+            - "7009:3000"
         environment:
             - XSS_LEVEL=2
     level3:
         build: .
         ports:
-            - "7003:3000"
+            - "7010:3000"
         environment:
             - XSS_LEVEL=3
     level4:
         build: .
         ports:
-            - "7004:3000"
+            - "7011:3000"
         environment:
             - XSS_LEVEL=4
     level5:
         build: .
         ports:
-            - "7005:3000"
+            - "7012:3000"
         environment:
             - XSS_LEVEL=5

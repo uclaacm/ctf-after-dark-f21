@@ -1,0 +1,10 @@
+id = 3
+title = "Cyber Academy:Cross-Site Scripting and Cross-Site Request Forgery"
+short = "XSS and CSRF" 
+date = "Monday 11/1 6:00PM-8:00PM PT"
+description = """Come learn about Extra Small Spaghetti and Surfing the Sea with us! Wait no, that’s wrong. Let’s try again. Come learn about Cross-Site Scripting and Cross-Site Request Forgery with us! We’ll teach you about how malicious code can be injected into both web pages and your browser, how you can protect yourself against it, but most importantly, how you can conduct your own XSS and CSRF attacks.
+
+RSVP on the Facebook Event
+"""
+link = ""
+slides = ""
