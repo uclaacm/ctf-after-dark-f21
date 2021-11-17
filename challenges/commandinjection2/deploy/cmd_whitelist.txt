@@ -1,1 +1,1 @@
-ls,pwd,whoami,cat,echo
+ls,pwd,whoami,cat,echo,head,tail

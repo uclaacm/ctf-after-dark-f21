@@ -27,12 +27,16 @@
         $txt = $_REQUEST['inputText'];
         $regex = shell_exec('cat filter_list.txt');
         $allowed_commands = explode(",", shell_exec('cat cmd_whitelist.txt'));
-        if(containsChar('&#;`*?\|\\~<>^[]{}\'"', $txt)) {
-           echo "<p> Illegal input, please don't include wacky characters other than @.-$()"; 
+        if(containsChar('&#;`*?\|\\~<>^[]\'"', $txt)) {
+           echo "<p> Illegal input, please don't include wacky characters other than @.-$():"; 
            exit();
         }
         $input_commands = preg_split('/(\$|\(|\))/', $txt);
         $is_valid = FALSE;
+        foreach ($input_commands as $curr) {
+          $curr_stripped = ltrim($curr);
+          echo "<p>" . $curr_stripped . "</p>";
+        }
         foreach ($input_commands as $curr) {
           $curr_stripped = ltrim($curr);
           $is_valid = FALSE;
@@ -44,11 +48,10 @@
           if(!$is_valid && !empty($curr_stripped)) {
             echo "<p> Here is your filtered output: </p>";
             $cmd = shell_exec('echo ' . escapeshellarg($txt) . ' | sed -E "s/' . $regex . '/\[REDACTED\]/g"'); 
-            echo "<pre>" . $cmd . "</pre>";
             exit();
           }
         }
-        $cmd = shell_exec('echo ' . $txt . ' | sed -E "s/' . $regex . '/\[REDACTED\]/g" 2>&1');
+        $cmd = shell_exec('echo ' . $txt . ' | sed -E "s/' . $regex . '/\[REDACTED\]/g"');
         echo "<pre>" . $cmd . "</pre>";
 
         // echo "<pre>" . $regex . "</pre>";

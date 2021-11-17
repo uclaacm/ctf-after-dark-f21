@@ -1,9 +1,9 @@
 slug = ""
 title = "Email Sanitizer"
 author = "Jeffrey"
-value = 25
+value = 35
 description = """A better, more improved version of [the tool](http://redacter.acmcyber.com:10001) is here."""
 tags = ["web"]
 files = []
-flag = "flag{m0n3y_mov3s}"
+flag = "flag{m0n3-ymov-3s}"
 enabled = true

@@ -1,1 +1,1 @@
-flag{m0n3y_mov3s}
+flag{m0n3-ymov-3s}
