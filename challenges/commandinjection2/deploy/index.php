@@ -35,10 +35,6 @@
         $is_valid = FALSE;
         foreach ($input_commands as $curr) {
           $curr_stripped = ltrim($curr);
-          echo "<p>" . $curr_stripped . "</p>";
-        }
-        foreach ($input_commands as $curr) {
-          $curr_stripped = ltrim($curr);
           $is_valid = FALSE;
           foreach ($allowed_commands as $valid) {
             if(substr($curr_stripped, 0, strlen($valid)) === $valid) {
@@ -48,6 +44,7 @@
           if(!$is_valid && !empty($curr_stripped)) {
             echo "<p> Here is your filtered output: </p>";
             $cmd = shell_exec('echo ' . escapeshellarg($txt) . ' | sed -E "s/' . $regex . '/\[REDACTED\]/g"'); 
+            echo "<pre>" . $cmd . "</pre>";
             exit();
           }
         }
