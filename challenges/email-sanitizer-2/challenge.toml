@@ -1,5 +1,5 @@
-slug = ""
-title = "Email Sanitizer"
+slug = "email-sanitizer-2"
+title = "Email Sanitizer 2"
 author = "Jeffrey"
 value = 25
 description = """A better, more improved version of [the tool](http://redacter-improved.acmcyber.com:10000) is here."""

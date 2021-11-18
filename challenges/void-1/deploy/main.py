@@ -24,22 +24,22 @@ triggers = ["script", "onabort", "onblur", "onchange", "onclick", "ondblclick",
         "onsubmit", "onunload", "javascript"]
 
 def filter(data):
-        if (level == 1): # DONE, remove all script
+        if (level == 1):
+            data = data
+        elif(level == 2):
             while(re.search("script", data, flags = re.IGNORECASE)):
                 data = re.sub("script", "", data, flags = re.IGNORECASE)
-        elif(level == 2): # DONE, put in button
-            data = f'<button type="button">{data}</button>'
-        elif (level == 3): # DONE, put in readonly textarea
-            data = f'<textarea readonly="true">{data}</textarea>'
-        elif (level == 4): # DONE, force encoding via python
+        elif (level == 3):
+            data = f'<textarea readonly="true" placeholder="{data}"></textarea>'
+        elif (level == 4):
             exec(f'data = base64.b64encode(bytes(data, "utf-8"))')
-        elif (level == 5): # DONE, dump triggers and words
+        elif (level == 5):
             for trig in triggers:
-                while(re.search(trig, data, flags = re.IGNORECASE)):
-                    data = re.sub(trig, "", data, flags = re.IGNORECASE)
+                if(re.search(trig, data, flags = re.IGNORECASE)):
+                    data = ""
             for word in keywords:
-                while(re.search(word, data, flags = re.IGNORECASE)):
-                    data = re.sub(trig, "", data, flags = re.IGNORECASE)
+                if(re.search(word, data, flags = re.IGNORECASE)):
+                    data = ""
         else:
             data=""
         return data

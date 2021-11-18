@@ -1,0 +1,9 @@
+slug = "ctf-feedback"
+title = "Feedback"
+author = "Henry"
+value = 5
+description = "Thanks for coming and we will see you next quarter! Yeet. [Form](https://forms.gle/7MUn1JSvnrmQCcw56)!"
+tags = ["Feedback"]
+files = []
+flag = "flag{cya_l4ter_al1igator}"
+enabled = true
